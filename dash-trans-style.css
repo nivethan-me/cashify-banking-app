@@ -156,12 +156,7 @@ img {
 }
 
 .containter-grid {
-	margin: 0rem 6rem;
-}
-
-.containter-grid .flex {
-	display: flexbox;
-	height: 30%;
+	margin: 0rem 5rem;
 }
 
 .containter-grid .flex-f {
@@ -171,7 +166,7 @@ img {
 
 .containter-grid .activities {
 	padding: 1rem;
-	margin-top:2rem;
+	margin-top: 2rem;
 }
 
 .activities .head {
@@ -187,20 +182,17 @@ img {
 
 .flex-grid {
 	display: grid;
-	grid-template-columns: 2fr 2fr;
-}
-.balance{
-  font-size: 1.5rem;
+	grid-template-columns: auto auto;
+	margin-top: 3rem;
 }
 
-.welcome{
-	font-size:1.4rem;
-  	font-weight: 700;
+.balance {
+	font-size: 1.5rem;
 }
 
-.containter-grid 
-{
-	height: 10rem;
+.welcome {
+	font-size: 1.4rem;
+	font-weight: 700;
 }
 
 .transaction {
@@ -218,14 +210,23 @@ img {
 	font-size: 1.5rem;
 }
 
+.flex {
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	margin: 2rem;
+}
+
+.flex a {
+	text-decoration: none;
+}
+
 .flex .account {
-	display: inline-flex;
-	flex-wrap: wrap;
+	display: block;
 	background-image: var(--gradient-primary);
-	border-radius: 2rem;
+	border-radius: 1rem;
 	width: 80%;
 	height: 10rem;
-	margin: 10px;
+	margin: auto;
 }
 
 .flex-f .account {
@@ -251,10 +252,10 @@ img {
 	padding: 10px 0px 0px 15px;
 }
 
-.flex-grid .boxes,
-.flex .boxes {
+.flex-grid .boxes {
 	display: grid;
-	grid-template-columns: auto auto;
+	grid-template-columns: 2fr 2fr;
+	margin: 1.5rem 1rem;
 }
 
 .flex-grid .squre_box {
@@ -331,7 +332,7 @@ input[type='submit']:hover {
 	background-color: #45a049;
 }
 
-form > p {
+form>p {
 	font-size: 1.7rem;
 	margin-left: 8px;
 	font-family: inherit;
@@ -368,11 +369,11 @@ form > p {
 	border-radius: 50%;
 }
 
-.radio:hover input ~ .checkmark {
+.radio:hover input~.checkmark {
 	background-color: rgb(161, 161, 161);
 }
 
-.radio input:checked ~ .checkmark {
+.radio input:checked~.checkmark {
 	background-color: #2196f3;
 }
 
@@ -382,7 +383,7 @@ form > p {
 	display: none;
 }
 
-.radio input:checked ~ .checkmark:after {
+.radio input:checked~.checkmark:after {
 	display: block;
 }
 
@@ -432,6 +433,7 @@ form > p {
 }
 
 @media only screen and (max-width: 450px) {
+
 	/* NAVIGATION */
 	.nav {
 		height: 7rem;
@@ -473,7 +475,7 @@ form > p {
 	}
 
 	.containter-grid {
-		margin: 2rem 6rem;
+		margin: 2rem 5rem;
 	}
 
 	.activities .head {
@@ -484,17 +486,22 @@ form > p {
 	.containter-grid .balance {
 		height: 6rem;
 	}
-	.balance{
-		font-size: 1.2rem;
+
+	.balance {
+		font-size: 1rem;
 	}
 
 	.transaction p {
 		font-size: 1.4rem;
 	}
 
+	.flex {
+		margin: 1rem;
+	}
+
 	.flex .account {
-		border-radius: 1rem;
-		width: 90%;
+		width: 15rem;
+		height: 8rem;
 	}
 
 	.flex-f .account {
@@ -507,31 +514,36 @@ form > p {
 	}
 
 	.flex .account p {
-		font-size: 1.6rem;
-		padding: 10px 0px 0px 15px;
+		font-size: 1.5rem;
+		padding: 8px 0px 0px 10px;
 	}
 
 	.flex-f .account p {
 		font-size: 1.6rem;
 		padding: 10px 0px 0px 15px;
 	}
+
 	.flex .boxes {
 		display: flex;
 	}
 
+	.flex-grid {
+		display: block;
+	}
+
 	.flex-grid .squre_box {
-		display:flex;
-		width: 8rem;
-		height: 8rem;
+		display: flex;
 		margin: auto;
+		height: 9rem;
+		width: 9rem;
 	}
 
 	.squre_box p {
-		font-size: 2rem;
+		font-size: 3rem;
 	}
 
 	.squre_box .sub_titile {
-		font-size: 1.3rem;
+		font-size: 1.4rem;
 	}
 
 	.form_container {
@@ -542,7 +554,7 @@ form > p {
 		margin: 2rem 5rem;
 	}
 
-	form > p {
+	form>p {
 		font-size: 1.7rem;
 		margin-left: 5rem;
 	}
@@ -557,6 +569,7 @@ form > p {
 		width: 90%;
 	}
 }
+
 /* added for js transaction function :nive */
 .movements {
 	grid-row: 2 / span 3;
