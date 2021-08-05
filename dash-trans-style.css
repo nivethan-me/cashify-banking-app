@@ -497,11 +497,13 @@ form>p {
 
 	.flex {
 		margin: 1rem;
+		display: block;
 	}
 
 	.flex .account {
-		width: 15rem;
-		height: 8rem;
+		width: 90%;
+		height: 9rem;
+		margin-bottom: 2rem;
 	}
 
 	.flex-f .account {
