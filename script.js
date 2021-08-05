@@ -139,7 +139,7 @@ if (document.body.className == 'landing') {
   ///////////////////////////////////////
   // Page navigation
 
-  document.querySelectorAll('.nav__link').forEach(function (el) {
+  /*document.querySelectorAll('.nav__link').forEach(function (el) {
     el.addEventListener('click', function (e) {
       e.preventDefault();
       const id = this.getAttribute('href');
@@ -157,7 +157,7 @@ if (document.body.className == 'landing') {
       document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
     }
   });
-
+*/
   ///////////////////////////////////////
   // Tabbed component
 
