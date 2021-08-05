@@ -170,9 +170,8 @@ img {
 }
 
 .containter-grid .activities {
-	border: 1px solid gray;
-	border-radius: 3rem;
-	padding: 2rem;
+	padding: 1rem;
+	margin-top:2rem;
 }
 
 .activities .head {
@@ -193,10 +192,14 @@ img {
 .balance{
   font-size: 1.5rem;
 }
+
 .welcome{
-  font-weight: 700;
+	font-size:1.4rem;
+  	font-weight: 700;
 }
-.containter-grid .balance {
+
+.containter-grid 
+{
 	height: 10rem;
 }
 
@@ -428,7 +431,7 @@ form > p {
 	border-radius: 3rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 450px) {
 	/* NAVIGATION */
 	.nav {
 		height: 7rem;
@@ -479,8 +482,10 @@ form > p {
 	}
 
 	.containter-grid .balance {
-		height: 8rem;
-		margin-bottom: 2rem;
+		height: 6rem;
+	}
+	.balance{
+		font-size: 1.2rem;
 	}
 
 	.transaction p {
@@ -510,10 +515,15 @@ form > p {
 		font-size: 1.6rem;
 		padding: 10px 0px 0px 15px;
 	}
+	.flex .boxes {
+		display: flex;
+	}
 
 	.flex-grid .squre_box {
+		display:flex;
 		width: 8rem;
 		height: 8rem;
+		margin: auto;
 	}
 
 	.squre_box p {
@@ -556,7 +566,7 @@ form > p {
 }
 
 .movements__row {
-	padding: 2.25rem 4rem;
+	padding: 1rem;
 	display: flex;
 	align-items: center;
 	border-bottom: 1px solid #eee;
