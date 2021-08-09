@@ -89,10 +89,10 @@ if (document.body.className == 'dashboard') {
 	let acc = accounts.find((acc) => acc.username == ca);
 	const logoutBtn = document.querySelector('.logout');
 	const containerMovements = document.querySelector('#containerMovements');
-	//welcome message
+	//Welcome message
 	const welcome = document.querySelector('.welcome');
 	welcome.textContent = `WELCOME BACK, ${acc.owner.toUpperCase()}`;
-	//displayMovements
+	//DisplayMovements
 	const displayMovements = function (movements) {
 		containerMovements.innerHTML = ' ';
 		movements.forEach(function (mov, i) {
@@ -103,7 +103,6 @@ if (document.body.className == 'dashboard') {
     <div class="movements__value">${mov.toLocaleString()} Rs</div>
     </div>
     `;
-
 			containerMovements.insertAdjacentHTML('afterbegin', html);
 		});
 	};
@@ -112,11 +111,12 @@ if (document.body.className == 'dashboard') {
 	// update balance
 	const balance__value = document.querySelector('#balance__value');
 
-	const calcDisplayBalance = function (movements) {
-		const balance = movements.reduce((accu, mov) => accu + mov, 0);
-		balance__value.textContent = ` ${balance.toLocaleString()}`;
+	const calcDisplayBalance = function (acc) {
+		acc.balance = acc.movements.reduce((accu, mov) => accu + mov, 0);
+
+		balance__value.textContent = ` ${acc.balance.toLocaleString()}`;
 	};
-	calcDisplayBalance(acc.movements);
+	calcDisplayBalance(acc);
 
 	// logout
 	const handleLogout = () => {
@@ -130,9 +130,22 @@ if (document.body.className == 'dashboard') {
 const btnTransfer = document.querySelector('.submit_btn');
 const inputTransferAmount = document.querySelector('#amount');
 const inputReceiverAccNo = document.querySelector('#inputReceiverAcc');
+const balance__transfer = document.querySelector('#balance__transfer');
 if (document.body.className == 'transfer') {
 	console.log('in transfer page');
+	//get logged in account using session variable
+	var ca = sessionStorage.getItem('key1');
+	let acc = accounts.find((acc) => acc.username == ca);
+	console.log(acc);
+	//Transfer page balance
+	const calcDisplayBalance2 = function (acc) {
+		acc.balance = acc.movements.reduce((accu, mov) => accu + mov, 0);
 
+		balance__transfer.textContent = ` ${acc.balance.toLocaleString()}`;
+	};
+	calcDisplayBalance2(acc);
+
+	//amount transfer function
 	btnTransfer.addEventListener('click', function (e) {
 		e.preventDefault();
 		const amount = Number(inputTransferAmount.value);
