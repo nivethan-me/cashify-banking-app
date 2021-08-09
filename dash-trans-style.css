@@ -283,9 +283,9 @@ img {
 	height: 80%;
 	margin-top: 10rem;
 }
-
-input[type='text'] {
-	width: 80%;
+input[type='text'],
+input[type='password'] {
+  width: 80%;
 	font-size: 1.7rem;
 	padding: 12px 20px;
 	margin: 2rem 0;
@@ -294,6 +294,7 @@ input[type='text'] {
 	border-radius: 4px;
 	box-sizing: border-box;
 }
+
 
 .btn_report {
 	position: absolute;
@@ -332,7 +333,7 @@ input[type='submit']:hover {
 	background-color: #45a049;
 }
 
-form>p {
+form > p {
 	font-size: 1.7rem;
 	margin-left: 8px;
 	font-family: inherit;
@@ -369,11 +370,11 @@ form>p {
 	border-radius: 50%;
 }
 
-.radio:hover input~.checkmark {
+.radio:hover input ~ .checkmark {
 	background-color: rgb(161, 161, 161);
 }
 
-.radio input:checked~.checkmark {
+.radio input:checked ~ .checkmark {
 	background-color: #2196f3;
 }
 
@@ -383,7 +384,7 @@ form>p {
 	display: none;
 }
 
-.radio input:checked~.checkmark:after {
+.radio input:checked ~ .checkmark:after {
 	display: block;
 }
 
@@ -433,7 +434,6 @@ form>p {
 }
 
 @media only screen and (max-width: 450px) {
-
 	/* NAVIGATION */
 	.nav {
 		height: 7rem;
@@ -556,7 +556,7 @@ form>p {
 		margin: 2rem 5rem;
 	}
 
-	form>p {
+	form > p {
 		font-size: 1.7rem;
 		margin-left: 5rem;
 	}

@@ -18,6 +18,7 @@ const account1 = {
 	interestrate: 2.5,
 	pin: 1111,
 	username: 'sah21',
+	acc_no: 'c000011112222',
 };
 const account2 = {
 	owner: 'Mohmed Sihan',
@@ -25,6 +26,7 @@ const account2 = {
 	interestRate: 1.5,
 	pin: 2222,
 	username: 'sih21',
+	acc_no: 'c000011112223',
 };
 
 const account3 = {
@@ -33,6 +35,7 @@ const account3 = {
 	interestRate: 0.7,
 	pin: 3333,
 	username: 'mat21',
+	acc_no: 'c000011112224',
 };
 
 const account4 = {
@@ -41,6 +44,7 @@ const account4 = {
 	interestRate: 1,
 	pin: 4444,
 	username: 'wil21',
+	acc_no: 'c000011112225',
 };
 
 const accounts = [account1, account2, account3, account4];
@@ -122,7 +126,23 @@ if (document.body.className == 'dashboard') {
 	};
 	logoutBtn.addEventListener('click', handleLogout);
 }
+///////////////////////////////////////// 🔮🔮🔮 TRANSFER PAGE 🔮🔮🔮
+const btnTransfer = document.querySelector('.submit_btn');
+const inputTransferAmount = document.querySelector('#amount');
+const inputReceiverAccNo = document.querySelector('#inputReceiverAcc');
+if (document.body.className == 'transfer') {
+	console.log('in transfer page');
 
+	btnTransfer.addEventListener('click', function (e) {
+		e.preventDefault();
+		const amount = Number(inputTransferAmount.value);
+		console.log(amount);
+		const receiverAcc = accounts.find((acc) => acc.acc_no === inputReceiverAccNo.value);
+		console.log(receiverAcc);
+	});
+}
+
+//
 ///////////////////////////////////////// 🏝🏝🏝landing page js🏝🏝🏝
 if (document.body.className == 'landing') {
 	// Button scrolling

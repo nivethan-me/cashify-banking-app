@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 	<head>
+    <meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Tranfer</title>
 		<link
 			href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
@@ -9,7 +12,7 @@
 		<link rel="stylesheet" href="dash-trans-style.css" />
 	</head>
 
-	<body>
+	<body class="transfer">
 		<nav class="nav">
 			<img src="img/logo.svg" alt="Cashify logo" class="nav__logo" id="logo" />
 			<ul class="nav__links">
@@ -49,7 +52,7 @@
 		<div class="container-f">
 			<div class="containter-grid">
 				<div class="balance">
-					<h1>Current balance: <span style="color: green; font-size: 2.5rem">215,019.00</span> Rs</h1>
+					<h1>Current balance: <span style="color: green; font-size: 2.5rem">215,019.00</span> LKR</h1>
 					<p style="font-size: 1.5rem">As of 2021/08/02, 2.40PM</p>
 				</div>
 				<div>
@@ -72,28 +75,29 @@
 			<div class="containter-grid">
 				<div class="form_container">
 					<form>
-						<input type="text" id="amount" name="Amount" placeholder="Amount" />
-						<input type="text" id="rReference" name="rReference" placeholder="Receiver reference" />
-						<input type="text" id="myReference" name="myReference" placeholder="My reference" />
-						<p>Payment date</p>
-						<div class="radio_btns">
-							<label class="radio"
-								>Pay Now
-								<input type="radio" name="radio" checked="checked" />
-								<span class="checkmark"></span>
-							</label>
-							<label class="radio"
-								>Schedule
-								<input type="radio" name="radio" />
-								<span class="checkmark"></span>
-							</label>
-						</div>
+						<p>Receipt Number: <span class="receipt-no"></span></p>
+						<input
+							type="text"
+							id="inputReceiverAcc"
+							name="inputReceiverAcc"
+							placeholder="enter receiver's account number"
+						/>
+						<input
+							type="text"
+							id=""
+							name=""
+							placeholder="confirm receiver's account number"
+						/>
+						<input type="password" id="pin" name="" placeholder="enter your account pin" />
+						<input type="text" id="amount" name="amount" placeholder="enter the amount to transfer" />
+
 						<div class="submit">
-							<input class="submit_btn" type="submit" value="Next" />
+							<input class="submit_btn" type="submit" value="Pay Now" />
 						</div>
 					</form>
 				</div>
 			</div>
 		</div>
+    <script src="script.js"></script>
 	</body>
 </html>
