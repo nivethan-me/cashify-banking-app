@@ -166,14 +166,12 @@ img {
 
 .containter-grid .activities {
 	padding: 1rem;
-	margin-top: 2rem;
 }
 
 .activities .head {
-	position: relative;
 	margin-left: 10px;
-	display: grid;
-	grid-template-columns: 2fr 1fr;
+	display: block;
+	font-size: 1.2rem;
 }
 
 .activities .box {
@@ -210,25 +208,6 @@ img {
 	font-size: 1.5rem;
 }
 
-.flex {
-	display: grid;
-	grid-template-columns: 2fr 2fr;
-	margin: 2rem;
-}
-
-.flex a {
-	text-decoration: none;
-}
-
-.flex .account {
-	display: block;
-	background-image: var(--gradient-primary);
-	border-radius: 1rem;
-	width: 80%;
-	height: 10rem;
-	margin: auto;
-}
-
 .flex-f .account {
 	display: block;
 	background-image: var(--gradient-primary);
@@ -250,32 +229,6 @@ img {
 .flex-f .account p {
 	font-size: 1.7rem;
 	padding: 10px 0px 0px 15px;
-}
-
-.flex-grid .boxes {
-	display: grid;
-	grid-template-columns: 2fr 2fr;
-	margin: 1.5rem 1rem;
-}
-
-.flex-grid .squre_box {
-	display: inline-flex;
-	flex-wrap: wrap;
-	background-image: linear-gradient(to top left, #ffb003, #ffcb03);
-	border-radius: 1rem;
-	width: 10rem;
-	height: 10rem;
-	margin: 10px;
-}
-
-.squre_box p {
-	font-size: 3rem;
-	margin: auto;
-}
-
-.squre_box .sub_titile {
-	font-size: 1.6rem;
-	margin-bottom: 10px;
 }
 
 .form_container {
@@ -479,8 +432,8 @@ form > p {
 	}
 
 	.activities .head {
-		display: grid;
-		grid-template-columns: 2fr 1fr;
+		display: block;
+		font-size: 1.2rem;
 	}
 
 	.containter-grid .balance {
@@ -493,17 +446,6 @@ form > p {
 
 	.transaction p {
 		font-size: 1.4rem;
-	}
-
-	.flex {
-		margin: 1rem;
-		display: block;
-	}
-
-	.flex .account {
-		width: 90%;
-		height: 9rem;
-		margin-bottom: 2rem;
 	}
 
 	.flex-f .account {
@@ -523,29 +465,6 @@ form > p {
 	.flex-f .account p {
 		font-size: 1.6rem;
 		padding: 10px 0px 0px 15px;
-	}
-
-	.flex .boxes {
-		display: flex;
-	}
-
-	.flex-grid {
-		display: block;
-	}
-
-	.flex-grid .squre_box {
-		display: flex;
-		margin: auto;
-		height: 9rem;
-		width: 9rem;
-	}
-
-	.squre_box p {
-		font-size: 3rem;
-	}
-
-	.squre_box .sub_titile {
-		font-size: 1.4rem;
 	}
 
 	.form_container {
