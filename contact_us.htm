@@ -5,12 +5,12 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Tranfer</title>
+	<title>Contact Us</title>
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="dash-trans-style.css" />
 </head>
 
-<body class="transfer">
+<body>
 	<nav class="nav">
 		<img src="img/logo.svg" alt="Cashify logo" class="nav__logo" id="logo" />
 		<ul class="nav__links">
@@ -18,7 +18,7 @@
 				<a class="nav__link" href="dashboard.htm">Dashboard</a>
 			</li>
 			<li class="nav__item">
-				<a class="nav__link" href="">Fund Tranfer</a>
+				<a class="nav__link" href="transfer.htm">Fund Tranfer</a>
 			</li>
 			<li class="nav__item">
 				<img src="img/align-justify-100.png" class="nav__bars" />
@@ -37,7 +37,7 @@
 					</div>
 					<div class="dropdown_item">
 						<img src="https://img.icons8.com/material/30/000000/call-female.png" />
-						<a href="contact_us.htm">Contact Us</a>
+						<a href="#">Contact Us</a>
 					</div>
 					<div class="dropdown_item">
 						<img src="https://img.icons8.com/ios-glyphs/30/000000/logout-rounded-left.png" />
@@ -49,27 +49,41 @@
 	</nav>
 	<div class="container">
 		<div class="containter-grid">
-			<div class="balance_t">
-				<h1>Current balance: <span id="balance__transfer"
-						style="color: green; font-size: 2.5rem">215,019.00</span> Rs</h1>
+			<div>
+				<div class="flex-ca">
+					<a href="#">
+						<div class="box_">
+							<p>Address</p>
+							<p>97 A Goal Road Colombo-7</p>
+						</div>
+					</a>
+					<a href="###">
+						<div class="box_">
+							<p>Email</p>
+							<p>example@clasify.com</p>
+						</div>
+					</a>
+					<a href="#">
+						<div class="box_">
+							<p>Mobile</p>
+							<p>001 2 3232 222</p>
+						</div>
+					</a>
+				</div>
 			</div>
-			<p>As of 2021/08/02, 2.40PM</p>
 		</div>
 		<div class="containter-grid">
 			<div class="form_container">
 				<form>
-					<p>Receipt Number: <span class="receipt-no"></span></p>
-					<input type="text" id="inputReceiverAcc" name="inputReceiverAcc"
-						placeholder="Enter receiver's account number" />
-					<input type="text" id="" name="" placeholder="Confirm receiver's account number" />
-					<input type="password" id="pin" name="" placeholder="Enter your account pin" />
-					<input type="text" id="amount" name="amount" placeholder="Enter the amount to transfer" />
-					<input type="submit" value="Pay Now" />
+					<p>Send message</p>
+					<input type="text" placeholder="Your name" />
+					<input type="email" placeholder="Your email" />
+					<textarea class="text_area" placeholder="Your message"></textarea>
+					<input type="submit" value="Send" />
 				</form>
 			</div>
 		</div>
 	</div>
-	<script src="script.js"></script>
 </body>
 
 </html>

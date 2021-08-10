@@ -150,22 +150,17 @@ img {
 	grid-template-columns: 1fr 1fr;
 }
 
-.container-f {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-}
-
 .containter-grid {
 	margin: 0rem 5rem;
+}
+
+.containter-grid>p {
+	font-size: 1.5rem;
 }
 
 .containter-grid .flex-f {
 	display: block;
 	height: 30%;
-}
-
-.containter-grid .activities {
-	padding: 1rem;
 }
 
 .activities .head {
@@ -177,18 +172,18 @@ img {
 	margin: 20px 0px 0px 10px;
 }
 
-.flex-grid {
-	display: grid;
-	grid-template-columns: auto auto;
-	margin-top: 3rem;
+.balance {
+	font-size: 1.6rem;
 }
 
-.balance {
-	font-size: 1.5rem;
+.balance_t {
+	font-size: 1.6rem;
+	margin-top: 5rem;
 }
+
 
 .welcome {
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 	font-weight: 700;
 }
 
@@ -207,25 +202,20 @@ img {
 	font-size: 1.5rem;
 }
 
-.flex-f .account {
+/* contact us */
+
+.flex-ca .box_ {
 	display: block;
-	background-image: var(--gradient-primary);
-	border-radius: 1rem;
 	width: 40rem;
 	height: 10rem;
-	margin: 25px;
+	margin: 4rem auto;
 }
 
-.flex-f a {
+.flex-ca a {
 	text-decoration: none;
 }
 
-.flex .account p {
-	font-size: 1.7rem;
-	padding: 10px 0px 0px 15px;
-}
-
-.flex-f .account p {
+.flex-ca .box_ p {
 	font-size: 1.7rem;
 	padding: 10px 0px 0px 15px;
 }
@@ -233,43 +223,40 @@ img {
 .form_container {
 	width: 100%;
 	height: 80%;
-	margin-top: 10rem;
+	margin: 5rem 0rem;
 }
+
 input[type='text'],
-input[type='password'] {
-  width: 80%;
+input[type='password'],
+input[type='email'] {
+	width: 80%;
 	font-size: 1.7rem;
 	padding: 12px 20px;
-	margin: 2rem 0;
+	margin: 2rem;
 	display: inline-block;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	box-sizing: border-box;
 }
 
-
-.btn_report {
-	position: absolute;
-	right: 10px;
-	display: block;
-	background-image: linear-gradient(to top left, #ffb003, #ffcb03);
-	font-size: 1.3rem;
-	font-family: inherit;
-	width: 110px;
-	height: 35px;
-	margin-left: 15px;
-	font-weight: 200;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	transition: all 0.3s;
-}
-
-.btn_report:hover {
-	background-color: var(--color-primary-darker);
+.text_area {
+	width: 80%;
+	height: 10rem;
+	font-size: 1.6rem;
+	padding: 12px 20px;
+	margin: 2rem;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	resize: none;
 }
 
 input[type='submit'] {
+	display: block;
+	position: absolute;
+	margin-top: 2rem;
+	right: 14.5rem;
 	width: 10rem;
 	background-color: #4caf50;
 	font-family: inherit;
@@ -285,9 +272,9 @@ input[type='submit']:hover {
 	background-color: #45a049;
 }
 
-form > p {
+form>p {
 	font-size: 1.7rem;
-	margin-left: 8px;
+	margin-left: 5px;
 	font-family: inherit;
 	font-weight: 400;
 }
@@ -322,11 +309,11 @@ form > p {
 	border-radius: 50%;
 }
 
-.radio:hover input ~ .checkmark {
+.radio:hover input~.checkmark {
 	background-color: rgb(161, 161, 161);
 }
 
-.radio input:checked ~ .checkmark {
+.radio input:checked~.checkmark {
 	background-color: #2196f3;
 }
 
@@ -336,7 +323,7 @@ form > p {
 	display: none;
 }
 
-.radio input:checked ~ .checkmark:after {
+.radio input:checked~.checkmark:after {
 	display: block;
 }
 
@@ -351,16 +338,6 @@ form > p {
 
 .radio_btns {
 	display: flex;
-}
-
-.submit {
-	position: relative;
-	width: 80%;
-}
-
-.submit_btn {
-	position: absolute;
-	right: 0px;
 }
 
 .tag_withdraw {
@@ -386,6 +363,7 @@ form > p {
 }
 
 @media only screen and (max-width: 450px) {
+
 	/* NAVIGATION */
 	.nav {
 		height: 7rem;
@@ -422,12 +400,13 @@ form > p {
 		display: block;
 	}
 
-	.container-f {
-		display: block;
-	}
-
 	.containter-grid {
 		margin: 2rem 5rem;
+	}
+
+	.containter-grid>p {
+		margin-top: 10px;
+		font-size: 1.2rem;
 	}
 
 	.activities .head {
@@ -443,25 +422,24 @@ form > p {
 		font-size: 1rem;
 	}
 
+	.balance_t {
+		font-size: 1rem;
+		margin-top: 0rem;
+	}
+
+
 	.transaction p {
 		font-size: 1.4rem;
 	}
 
-	.flex-f .account {
+	.flex-ca .box_ {
 		display: block;
-		background-image: var(--gradient-primary);
-		border-radius: 1rem;
 		width: 80%;
 		height: 10rem;
-		margin-left: 5rem;
+		margin: 1rem;
 	}
 
-	.flex .account p {
-		font-size: 1.5rem;
-		padding: 8px 0px 0px 10px;
-	}
-
-	.flex-f .account p {
+	.flex-ca .box_ p {
 		font-size: 1.6rem;
 		padding: 10px 0px 0px 15px;
 	}
@@ -470,13 +448,18 @@ form > p {
 		margin: auto;
 	}
 
-	input[type='text'] {
-		margin: 2rem 5rem;
+	input[type='text'],
+	input[type='email'],
+	input[type='password'],
+	.text_area {
+		font-size: 1.5rem;
+		margin: 2rem;
+		width: 90%;
 	}
 
-	form > p {
+	form>p {
 		font-size: 1.7rem;
-		margin-left: 5rem;
+		margin-left: 2rem;
 	}
 
 	.radio_btns {
@@ -484,9 +467,9 @@ form > p {
 		margin-left: 5rem;
 	}
 
-	.submit {
-		position: relative;
-		width: 90%;
+	input[type='submit'] {
+		position: absolute;
+		right: 6.5rem;
 	}
 }
 
