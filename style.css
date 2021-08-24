@@ -302,7 +302,7 @@ h4 {
 }
 
 .operations__tab--active {
-	transform: translateY(-66%);
+	transform: translateY(-75%);
 }
 
 .operations__content {
@@ -684,7 +684,7 @@ img {
 		/* margin-bottom: 8rem; */
 	}
 	.header__title > h1 {
-		font-size: 3.7rem;
+		font-size: 3.3rem;
 	}
 	.header__title > h4 {
 		font-size: 2.1rem;
@@ -733,6 +733,7 @@ img {
 	/* tab buttons */
 	.operations {
 		margin-top: 6rem;
+        /* max-width: 100%; */
 	}
 	.operations__tab--active {
 		/* transform:translateY(0%); */
@@ -804,10 +805,13 @@ img {
     .footer{
         padding:10rem 0;
     }
+    .footer__link{
+        font-size: 1.3rem;
+    }
     .footer__nav{
-        margin-left: 1.5rem;
+        /* margin-left: 1.5rem; */
     }
     .footer__item{
-        margin-right: 1.5rem;
+        margin-right: 1rem;
     }
 }
