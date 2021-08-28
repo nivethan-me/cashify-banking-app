@@ -19,36 +19,45 @@
 	</head>
 	<body class="landing">
 		<header class="header">
-			<div class="nav__menucontainer">
-				<nav class="nav">
-					<img src="img/logo.svg" class="nav__logo" id="logo" alt="Cashify logo" />
-					<ul class="nav__links">
-						<li class="nav__item">
-							<a class="nav__link" href="#section--1">Features</a>
-						</li>
-						<li class="nav__item">
-							<a class="nav__link" href="#section--2">Operations</a>
-						</li>
-						<li class="nav__item">
-							<a class="nav__link" href="#section--3">Testimonials</a>
-						</li>
-						<li class="nav__item">
-							<a class="nav__link nav__link--btn" href="login.html">Login</a>
-						</li>
-						<li class="nav__item">
-							<a class="nav__link nav__link--btn" href="#">Signup</a>
-						</li>
-					</ul>
-					<!-- mobile hamburger menu -->
-					<a id="hamburger" href="#navmenu" title="menu" class="nav__hamburger">
-						<!-- <i class="fa fa-2x fa-hamburger"></i> -->
-						<i class="fas fa-2x fa-bars"></i>
-					</a>
-				</nav>
-				<a href="#!" title="close menu" class="nav__hamburgerclose"><i class="fa fa-2x fa-times-circle"></i></a>
-			</div>
+			<nav class="nav">
+				<img src="img/logo.svg" class="nav__logo" id="logo" alt="Cashify logo" />
+				<ul class="nav__links">
+					<li class="nav__item">
+						<a class="nav__link" href="#section--1">Features</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#section--2">Operations</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link" href="#section--3">Testimonials</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link nav__link--btn" href="login.html">Login</a>
+					</li>
+					<li class="nav__item">
+						<a class="nav__link nav__link--btn" href="signup.html">Signup</a>
+					</li>
+				</ul>
+			</nav>
+			<!-- mobile hamburger menu -->
+			<nav class="nav-mobile">
+				<input type="checkbox" id="check" />
+				<label for="check">
+					<i class="fas fa-bars" id="btn"></i>
+					<i class="fas fa-times" id="cancel"></i>
+				</label>
+				<img src="img/logo.svg" class="nav-mobile__logo" id="mobile-logo" alt="Cashify logo" />
+				<ul class="nav-mobile__links">
+					<!-- <li class="nav-mobile__item"><a class="nav-mobile__link" href="#section--1">Features</a></li> -->
+					<!-- <li class="nav-mobile__item"><a class="nav-mobile__link" href="#section--2">Operations</a></li> -->
+					<!-- <li class="nav-mobile__item"><a class="nav-mobile__link" href="#section--3">Testimonials</a></li> -->
+					<li class="nav-mobile__item"><a class="nav-mobile__link" href="login.html">Login</a></li>
+					<li class="nav-mobile__item"><a class="nav-mobile__link" href="signup.html">Signup</a></li>
+					<li class="nav-mobile__item"><a class="nav-mobile__link" href="#">About us</a></li>
+				</ul>
+			</nav>
 
-			<div class="header__title">
+			<div class="header__title header--one">
 				<h1>
 					<!-- Green highlight effect -->
 					When
@@ -189,9 +198,9 @@
 					<div class="testimonial">
 						<h5 class="testimonial__header">The last step to becoming an Entreprenuer</h5>
 						<blockquote class="testimonial__text">
-							We needed a loan to expand our business and Dime CASHIFY came through for us without hesitation. They found a
-							way to make it happen when other banks couldn't. Working with CASHIFY changed the way we do business, allowing
-							us to grow into other business areas.
+							We needed a loan to expand our business and CASHIFY came through for us without hesitation. They found a way to
+							make it happen when other banks couldn't. Working with CASHIFY changed the way we do business, allowing us to
+							grow into other business areas.
 						</blockquote>
 						<address class="testimonial__author">
 							<img src="img/user-2.jpeg" alt="" class="testimonial__photo" />
@@ -206,13 +215,13 @@
 						<h5 class="testimonial__header">Finally free from bank queues</h5>
 						<blockquote class="testimonial__text">
 							CASHIFY Bank has been outstanding in the services they have provided me. I have utilized their services for over
-							a year while working from my home. They are very responsive to communications as well as follow through, and
-							have made my banking experiences painless.
+							a year now. They are very responsive to communications as well as follow through, and have made my banking
+							experiences painless.
 						</blockquote>
 						<address class="testimonial__author">
 							<img src="img/user-3.jpeg" alt="" class="testimonial__photo" />
 							<h6 class="testimonial__name">Saheen Ahamed</h6>
-							<p class="testimonial__location">Ampara,Sri Lanka</p>
+							<p class="testimonial__location">Ampara, Sri Lanka</p>
 						</address>
 					</div>
 				</div>
@@ -227,7 +236,7 @@
 			<div class="section__title">
 				<h3 class="section__header">The best day to join Cashify was one year ago. The second best is today!</h3>
 			</div>
-			<button class="btn">Open your free account today!</button>
+			<button class="btn" onclick="location.href='./signup.html'">Open your free account today!</button>
 		</section>
 
 		<footer class="footer">
