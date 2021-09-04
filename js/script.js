@@ -5,6 +5,8 @@ const btnCloseModal = document.querySelector('.btn--close-modal');
 const btnsOpenModal = document.querySelectorAll('.btn--show-modal');
 const btnScrollTo = document.querySelector('.btn--scroll-to');
 const section1 = document.querySelector('#section--1');
+const section2 = document.querySelector('#section--2');
+const section3 = document.querySelector('#section--3');
 const nav = document.querySelector('.nav');
 const tabs = document.querySelectorAll('.operations__tab');
 const tabsContainer = document.querySelector('.operations__tab-container');
@@ -157,11 +159,11 @@ if (document.body.className == 'transfer') {
 
 //
 ///////////////////////////////////////// 🏝🏝🏝landing page js🏝🏝🏝
+const features = document.querySelector('#features');
+const operations = document.querySelector('#operations');
+const testimonials = document.querySelector('#testimonials');
 if (document.body.className == 'landing') {
 	// Button scrolling
-	btnScrollTo.addEventListener('click', function (e) {
-		section1.scrollIntoView({ behavior: 'smooth' });
-	});
 
 	///////////////////////////////////////
 	// Page navigation
@@ -226,28 +228,28 @@ if (document.body.className == 'landing') {
 
 	///////////////////////////////////////
 	// Sticky navigation: I used Intersection Observer API
-	if (window.screen.width > 680) {
-		const header = document.querySelector('.header');
-		const navHeight = nav.getBoundingClientRect().height;
+	// if (window.screen.width > 680) {
+	// 	const header = document.querySelector('.header');
+	// 	const navHeight = nav.getBoundingClientRect().height;
 
-		console.log('oopssss');
+	// 	console.log('oopssss');
 
-		const stickyNav = function (entries) {
-			const [entry] = entries;
-			// console.log(entry);
+	// 	const stickyNav = function (entries) {
+	// 		const [entry] = entries;
+	// 		// console.log(entry);
 
-			if (!entry.isIntersecting) nav.classList.add('sticky');
-			else nav.classList.remove('sticky');
-		};
+	// 		if (!entry.isIntersecting) nav.classList.add('sticky');
+	// 		else nav.classList.remove('sticky');
+	// 	};
 
-		const headerObserver = new IntersectionObserver(stickyNav, {
-			root: null,
-			threshold: 0,
-			rootMargin: `-${navHeight}px`,
-		});
+	// 	const headerObserver = new IntersectionObserver(stickyNav, {
+	// 		root: null,
+	// 		threshold: 0,
+	// 		rootMargin: `-${navHeight}px`,
+	// 	});
 
-		headerObserver.observe(header);
-	}
+	// 	headerObserver.observe(header);
+	// }
 	///////////////////////////////////////
 	// Reveal sections
 	const allSections = document.querySelectorAll('.section');

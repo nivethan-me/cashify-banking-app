@@ -14,28 +14,28 @@
 		<link rel="icon" href="https://img.icons8.com/color/96/000000/sri-lanka.png" type="image/x-icon" />
 		<!-- google font -->
 		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet" />
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="./css/style.css" />
 		<title>Cashify | Landing Page</title>
 	</head>
 	<body class="landing">
 		<header class="header">
-			<nav class="nav">
-				<img src="img/logo.svg" class="nav__logo" id="logo" alt="Cashify logo" />
+			<nav class="nav sticky">
+				<img src="img/landing-page/logo.svg" class="nav__logo" id="logo" alt="Cashify logo" />
 				<ul class="nav__links">
 					<li class="nav__item">
-						<a class="nav__link" href="#section--1">Features</a>
+						<a class="nav__link" id="features" href="#section--">Features</a>
 					</li>
 					<li class="nav__item">
-						<a class="nav__link" href="#section--2">Operations</a>
+						<a class="nav__link" id="operations" href="#section--">Operations</a>
 					</li>
 					<li class="nav__item">
-						<a class="nav__link" href="#section--3">Testimonials</a>
+						<a class="nav__link" id="testimonials" href="#section--">Testimonials</a>
 					</li>
 					<li class="nav__item">
-						<a class="nav__link nav__link--btn" href="login.html">Login</a>
+						<a class="nav__link nav__link--btn" href="./common/login.html">Login</a>
 					</li>
 					<li class="nav__item">
-						<a class="nav__link nav__link--btn" href="signup.html">Signup</a>
+						<a class="nav__link nav__link--btn" href="./common/signup.html">Signup</a>
 					</li>
 				</ul>
 			</nav>
@@ -46,7 +46,7 @@
 					<i class="fas fa-bars" id="btn"></i>
 					<i class="fas fa-times" id="cancel"></i>
 				</label>
-				<img src="img/logo.svg" class="nav-mobile__logo" id="mobile-logo" alt="Cashify logo" />
+				<img src="img/landing-page/logo.svg" class="nav-mobile__logo" id="mobile-logo" alt="Cashify logo" />
 				<ul class="nav-mobile__links">
 					<!-- <li class="nav-mobile__item"><a class="nav-mobile__link" href="#section--1">Features</a></li> -->
 					<!-- <li class="nav-mobile__item"><a class="nav-mobile__link" href="#section--2">Operations</a></li> -->
@@ -66,7 +66,7 @@
 				</h1>
 				<h4>A simpler banking experience for a simpler life.</h4>
 				<button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
-				<img src="img/saving2.png" class="header__img" alt="Minimalist bank items" />
+				<img src="img/landing-page/saving2.png" class="header__img" alt="Minimalist bank items" />
 			</div>
 		</header>
 
@@ -77,11 +77,11 @@
 			</div>
 
 			<div class="features">
-				<img src="img/digital.jpg" alt="Computer" class="features__img computer-desktop" />
+				<img src="img/landing-page/digital.jpg" alt="Computer" class="features__img computer-desktop" />
 				<div class="features__feature">
 					<div class="features__icon">
 						<svg>
-							<use xlink:href="img/icons.svg#icon-monitor"></use>
+							<use xlink:href="img/landing-page/icons.svg#icon-monitor"></use>
 						</svg>
 					</div>
 					<h5 class="features__header">100% digital bank</h5>
@@ -89,33 +89,33 @@
 						CASHIFY Internet Banking now offers you the convenience of performing a host of banking functions from the comfort
 						of your home or office.
 					</p>
-					<img src="img/digital.jpg" alt="Computer" class="features__img computer-mobile" />
+					<img src="img/landing-page/digital.jpg" alt="Computer" class="features__img computer-mobile" />
 				</div>
 
 				<div class="features__feature">
 					<div class="features__icon">
 						<svg>
-							<use xlink:href="img/icons.svg#icon-trending-up"></use>
+							<use xlink:href="img/landing-page/icons.svg#icon-trending-up"></use>
 						</svg>
 					</div>
-					<h5 class="features__header">Watch your money grow</h5>
+					<h5 class="features__reader">Watch your money grow</h5>
 					<p>
 						Get Highest Interest Rates in Sri Lanka for your Savings and Deposits, let your money work for you while you are at
 						home.
 					</p>
 				</div>
-				<img src="img/grow.jpg" alt="Plant" class="features__img" />
+				<img src="img/landing-page/grow.jpg" alt="Plant" class="features__img" />
 
-				<img src="img/debit-card.jpg" alt="Credit card" class="features__img computer-desktop" />
+				<img src="img/landing-page/debit-card.jpg" alt="Credit card" class="features__img computer-desktop" />
 				<div class="features__feature">
 					<div class="features__icon">
 						<svg>
-							<use xlink:href="img/icons.svg#icon-credit-card"></use>
+							<use xlink:href="img/landing-page/icons.svg#icon-credit-card"></use>
 						</svg>
 					</div>
 					<h5 class="features__header">Free debit card service</h5>
 					<p>Conveniently pay your utility bill payments via our debit card service with no fees for life time.</p>
-					<img src="img/debit-card.jpg" alt="Credit card" class="features__img computer-mobile" />
+					<img src="img/landing-page/debit-card.jpg" alt="Credit card" class="features__img computer-mobile" />
 				</div>
 			</div>
 		</section>
@@ -137,7 +137,7 @@
 				<!--  -->
 				<div class="operations__content operations__content--1 operations__content--active">
 					<div class="operations__icon operations__icon--1">
-						<svg><use xlink:href="img/icons.svg#icon-upload"></use></svg>
+						<svg><use xlink:href="img/landing-page/icons.svg#icon-upload"></use></svg>
 					</div>
 					<h5 class="operations__header">Tranfer money to anyone, instantly! without fees.</h5>
 					<p>
@@ -149,7 +149,7 @@
 
 				<div class="operations__content operations__content--2">
 					<div class="operations__icon operations__icon--2">
-						<svg><use xlink:href="img/icons.svg#icon-home"></use></svg>
+						<svg><use xlink:href="img/landing-page/icons.svg#icon-home"></use></svg>
 					</div>
 					<h5 class="operations__header">Get your things done with instant loans.</h5>
 					<p>
@@ -160,7 +160,7 @@
 
 				<div class="operations__content operations__content--3">
 					<div class="operations__icon operations__icon--3">
-						<svg><use xlink:href="img/icons.svg#icon-user-x"></use></svg>
+						<svg><use xlink:href="img/landing-page/icons.svg#icon-user-x"></use></svg>
 					</div>
 					<h5 class="operations__header">No longer need your account? No problem! Close it instantly.</h5>
 					<p>
@@ -187,7 +187,7 @@
 							to COVID!
 						</blockquote>
 						<address class="testimonial__author">
-							<img src="img/user-1.jpeg" alt="" class="testimonial__photo" />
+							<img src="img/landing-page/user-1.jpeg" alt="" class="testimonial__photo" />
 							<h6 class="testimonial__name">Loganathan Mathan</h6>
 							<p class="testimonial__location">Badulla, Sri Lanka</p>
 						</address>
@@ -203,7 +203,7 @@
 							grow into other business areas.
 						</blockquote>
 						<address class="testimonial__author">
-							<img src="img/user-2.jpeg" alt="" class="testimonial__photo" />
+							<img src="img/landing-page/user-2.jpeg" alt="" class="testimonial__photo" />
 							<h6 class="testimonial__name">Mohamed Sihan</h6>
 							<p class="testimonial__location">Eheliyagoda, Sri Lanka</p>
 						</address>
@@ -219,7 +219,7 @@
 							experiences painless.
 						</blockquote>
 						<address class="testimonial__author">
-							<img src="img/user-3.jpeg" alt="" class="testimonial__photo" />
+							<img src="img/landing-page/user-3.jpeg" alt="" class="testimonial__photo" />
 							<h6 class="testimonial__name">Saheen Ahamed</h6>
 							<p class="testimonial__location">Ampara, Sri Lanka</p>
 						</address>
@@ -236,32 +236,32 @@
 			<div class="section__title">
 				<h3 class="section__header">The best day to join Cashify was one year ago. The second best is today!</h3>
 			</div>
-			<button class="btn" onclick="location.href='./signup.html'">Open your free account today!</button>
+			<button class="btn" onclick="location.href='./common/signup.html'">Open your free account today!</button>
 		</section>
 
 		<footer class="footer">
 			<ul class="footer__nav">
 				<li class="footer__item">
-					<a class="footer__link" href="#">About</a>
+					<a class="footer__link" href="./common/aboutus.html">About</a>
 				</li>
 
-				<li class="footer__item">
+				<!-- <li class="footer__item">
 					<a class="footer__link" href="#">Terms of Use</a>
+				</li> -->
+				<li class="footer__item">
+					<a class="footer__link" href="./common/agrement.html">Privacy Policy</a>
 				</li>
 				<li class="footer__item">
-					<a class="footer__link" href="#">Privacy Policy</a>
-				</li>
-				<li class="footer__item">
-					<a class="footer__link" href="#">Contact Us</a>
+					<a class="footer__link" href="./common/contact_us.htm">Contact Us</a>
 				</li>
 			</ul>
-			<img src="img/logo.svg" alt="Logo" class="footer__logo" />
+			<img src="img/landing-page/logo.svg" alt="Logo" class="footer__logo" />
 			<p class="footer__copyright">
 				made with <span style="color: #5ec576">&#10084;</span> by
 				<a class="footer__link linkedin-link" target="_blank" href="https://www.linkedin.com/in/nivethan-a/">Nivethan</a>
 			</p>
 		</footer>
 
-		<script src="script.js"></script>
+		<script src="./js/script.js"></script>
 	</body>
 </html>

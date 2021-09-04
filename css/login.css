@@ -1,0 +1,220 @@
+/* General classes */
+:root {
+  --color-primary: #5ec576;
+  --color-secondary: #ffcb03;
+  --color-rose: #ff585f;
+  --color-primary-darker: #4bbb7d;
+  --color-secondary-darker: #ffbb00;
+  --color-rose-darker: #fd424b;
+  --color-primary-opacity: #5ec5763a;
+  --color-secondary-opacity: #ffcd0331;
+  --color-rose-opacity: #ff58602d;
+  --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #444;
+  line-height: 2;
+  background-color: #f3f3f3;
+}
+
+/* Login Container classes */
+.login_container_body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: var(--gradient-primary);
+  align-items: center;
+}
+
+.login_container {
+  margin: 0px 20px;
+  max-width: 500px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.login_container > h1 {
+  font-size: 30px;
+}
+
+/* Heading and slogan classes */
+.heading {
+  margin: auto;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 3.5rem;
+}
+.slogan {
+  font-weight: 300;
+  font-size: 1.9rem;
+  padding-bottom: 20px;
+  margin: auto;
+}
+
+.flex-grid .boxes,
+.flex .boxes {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+/* Input style classes */
+input[type="text"] {
+  width: 80%;
+  font-size: 1.5rem;
+  padding: 12px 20px;
+  margin: 1rem 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type="password"] {
+  width: 80%;
+  font-size: 1.5rem;
+  padding: 12px 20px;
+  margin: 0.5rem 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.textErrorBorder {
+  border: red 1.5px solid !important;
+}
+
+.passwordError {
+  border-color: red;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: checkbox;
+  -moz-appearance: checkbox;
+  appearance: checkbox;
+  display: inline-block;
+  width: auto;
+}
+
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
+/* Remember me classes */
+.showPassword {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.showPassword:hover,
+.rememberMe:hover {
+  cursor: pointer;
+}
+
+.rememberMe {
+  display: inline;
+  color: graysj;
+  font-weight: norma;
+  margin: 5px;
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+
+/* Submit Button Classes */
+.submit {
+  margin: auto;
+  padding-top: 15px;
+}
+
+button[type="submit"] {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  margin-bottom: 15px;
+}
+
+button[type="submit"]:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 10px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* LoginSpecified Classes */
+.registerMember {
+  cursor: pointer;
+  display: block;
+  font-size: 1.1rem;
+}
+
+.registerMember:hover {
+  color: var(--color-primary-darker);
+}
+
+/* SignUpSpecified Classes */
+.alreadyMember {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.alreadyMember:hover {
+  color: var(--color-primary-darker);
+}
+
+.alertDiv {
+  display: none;
+  color: red;
+  margin: 1rem 0;
+  padding: 5px 50px 0 50px;
+}
+
+.showAlert {
+  display: block !important;
+}
+
+.errorBorder {
+  border: red 2px solid;
+}
+
+.backButton {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  margin: 2rem;
+  background: white;
+  font-weight: 500;
+  border-radius: 1rem;
+  vertical-align: middle;
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px 0;
+}
+
+.backButton:hover {
+  cursor: pointer;
+}

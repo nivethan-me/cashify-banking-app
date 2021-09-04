@@ -1,5 +1,4 @@
-'use strict';
-
+// "use strict";
 
 // function submitForm(event) {
 //   event.preventDefault();
@@ -21,6 +20,24 @@
 //   }
 // }
 
-// function registrationRedirect() {
-//   window.location.href = "signup.html";
-// }
+function registrationRedirect() {
+  window.location.href = "../signup/signup.html";
+}
+
+function showPassword() {
+  var passwordTextBox = document.getElementById("password");
+  var passwordCheckBox = document.getElementById("showPasswordCheckBox");
+  if (passwordTextBox.type == "password") {
+    console.log("Executing");
+    passwordTextBox.type = "text";
+    passwordCheckBox.checked = true;
+  } else {
+    passwordTextBox.type = "password";
+    passwordCheckBox.checked = false;
+  }
+}
+
+//Redicrect to Home
+function backToHome() {
+  window.location.href = "../index.html";
+}

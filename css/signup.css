@@ -55,15 +55,14 @@ body {
 
 /* Heading and slogan classes */
 .heading {
-  width: 100px;
   margin: auto;
   font-weight: 900;
   text-transform: uppercase;
-  font-size: 2.5rem;
+  font-size: 3rem;
 }
 .slogan {
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 1.9rem;
   padding-bottom: 20px;
 }
 
@@ -76,7 +75,7 @@ body {
 /* Input style classes */
 input[type="text"] {
   width: 80%;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   padding: 12px 20px;
   margin: 1rem 0;
   display: inline-block;
@@ -86,13 +85,17 @@ input[type="text"] {
 }
 input[type="password"] {
   width: 80%;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   padding: 12px 20px;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+}
+
+.textErrorBorder {
+  border: red 1.5px solid !important;
 }
 
 .passwordError {
@@ -107,25 +110,37 @@ input[type="checkbox"] {
   width: auto;
 }
 
+input[type="checkbox"]:hover {
+  cursor: pointer;
+}
+
 /* Remember me classes */
-.rememberMeDiv {
+.showPassword {
   display: flex;
-  margin: 0.5rem 0;
-  padding: 10px 50px 0 50px;
+  width: 80%;
+  margin: auto;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.showPassword:hover,
+.rememberMe:hover {
+  cursor: pointer;
 }
 
 .rememberMe {
   display: inline;
   color: gray;
   font-weight: norma;
-  margin-left: 20px;
+  margin: 5px;
   font-size: 1.2rem;
+  vertical-align: middle;
 }
 
 /* Submit Button Classes */
 .submit {
-  margin: 0.5rem 0;
-  padding: 15px 50px 0 50px;
+  margin: auto;
+  padding-top: 15px;
 }
 
 button[type="submit"] {
@@ -153,7 +168,8 @@ button[type="submit"]:hover {
 /* LoginSpecified Classes */
 .registerMember {
   cursor: pointer;
-  display: inline-block;
+  display: block;
+  font-size: 1.1rem;
 }
 
 .registerMember:hover {
@@ -171,8 +187,36 @@ button[type="submit"]:hover {
 }
 
 .alertDiv {
-  display: flex;
+  display: none;
   color: red;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
   padding: 5px 50px 0 50px;
+}
+
+#errorText {
+  text-align: left;
+}
+.showAlert {
+  display: block !important;
+}
+
+.errorBorder {
+  border: red 2px solid;
+}
+
+.backButton {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 1rem;
+  margin: 2rem;
+  background: white;
+  font-weight: 500;
+  border-radius: 1rem;
+  vertical-align: middle;
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px 0;
+}
+
+.backButton:hover {
+  cursor: pointer;
 }

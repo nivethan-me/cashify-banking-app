@@ -113,6 +113,7 @@ img {
 	width: 100%;
 	padding: 0 6rem;
 	z-index: 100;
+	background-color: rgba(255, 255, 255, 0.95);
 }
 
 /* nav and sticky class at the same time */

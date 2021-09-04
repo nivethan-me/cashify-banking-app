@@ -1,0 +1,152 @@
+/* Font import */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+/* General classes */
+:root {
+  --color-primary: #5ec576;
+  --color-secondary: #ffcb03;
+  --color-rose: #ff585f;
+  --color-primary-darker: #4bbb7d;
+  --color-secondary-darker: #ffbb00;
+  --color-rose-darker: #fd424b;
+  --color-primary-opacity: #5ec5763a;
+  --color-secondary-opacity: #ffcd0331;
+  --color-rose-opacity: #ff58602d;
+  --gradient-primary: linear-gradient(to top left, #39b385, #9be15d);
+  --gradient-primary-about: linear-gradient(
+    to top left,
+    rgba(54, 177, 95, 0.384),
+    rgba(74, 179, 105, 0.733)
+  );
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #444;
+  line-height: 1.5;
+  background-color: #f3f3f3;
+}
+
+/* Background image about us */
+.background {
+  background: var(--gradient-primary-about), url("../img/aboutUs2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: auto;
+}
+
+.background p {
+  color: white;
+  display: block;
+  width: 50%;
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding: 2rem 4rem;
+  font-family: "Pacifico", cursive;
+  font-style: italic;
+}
+
+.background h1 {
+  color: white;
+  display: inline-block;
+  font-size: 4rem;
+  padding: 0 4rem;
+  line-height: 1.2;
+  padding-bottom: 3rem;
+  font-weight: 900;
+  font-family: "Poppins", sans-serif;
+}
+
+/* mission and vision style classes */
+
+.tiles {
+  margin: 2rem;
+}
+
+.topBar {
+  margin: 1rem 1.8rem;
+  height: 5px;
+  background: var(--gradient-primary);
+}
+.tiles h1 {
+  font-weight: 500;
+  margin: 0 2rem;
+}
+
+.tiles p {
+  margin: 0.5rem 2rem;
+  padding-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.valuesList {
+  list-style: circle;
+  font-size: 1rem;
+  margin: 0 5rem;
+}
+
+.quoteBox {
+  margin: 1rem 1.8rem;
+  /* margin: auto; */
+  padding: 2rem;
+  background: var(--gradient-primary);
+  box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 8px 0;
+  vertical-align: middle;
+}
+
+.quoteBox h2 {
+  font-size: 2.5rem;
+  font-family: "Pacifico", cursive;
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.quoteBox > p {
+  font-size: 1rem;
+  display: inline-block;
+  width: 48%;
+  text-align: right;
+  vertical-align: middle;
+}
+
+/* Our history style */
+.historySection {
+  margin-top: 2rem;
+  width: 100%;
+  background: linear-gradient(
+      to top,
+      rgba(243, 243, 243, 0),
+      rgba(243, 243, 243, 1)
+    ),
+    var(--gradient-primary);
+}
+
+.ourHistory {
+  margin: 0 3rem;
+}
+
+.ourHistory h2 {
+  text-align: center;
+  margin-bottom: 1rem 0;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.ourHistory .firstPara::first-letter {
+  font-size: 2rem;
+  font-family: "Pacifico", cursive;
+}
+
+.ourHistory p {
+  padding-bottom: 1rem;
+}
