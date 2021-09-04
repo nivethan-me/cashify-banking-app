@@ -164,7 +164,19 @@ const operations = document.querySelector('#operations');
 const testimonials = document.querySelector('#testimonials');
 if (document.body.className == 'landing') {
 	// Button scrolling
-
+	btnScrollTo.addEventListener('click', function (e) {
+		console.log('smooth');
+		section1.scrollIntoView({ behavior: 'smooth' });
+	});
+	features.addEventListener('click', function (e) {
+		section1.scrollIntoView({ behavior: 'smooth' });
+	});
+	operations.addEventListener('click', function (e) {
+		section2.scrollIntoView({ behavior: 'smooth' });
+	});
+	testimonials.addEventListener('click', function (e) {
+		section3.scrollIntoView({ behavior: 'smooth' });
+	});
 	///////////////////////////////////////
 	// Page navigation
 
