@@ -20,27 +20,36 @@
 					<a class="nav__link" href="">Fund Tranfer</a>
 				</li>
 				<li class="nav__item">
-					<img src="img/align-justify-100.png" class="nav__bars" />
+					<a class="nav__link" href="../common/agrement.html">Privacy Policies</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="../common/contact_us.htm">Contact Us</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="index.html">Logout</a>
+				</li>
+				<li class="nav__item" id="nav_hamburger">
+					<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAABD0lEQVRoge3YsS4FQRiG4fcTEg4SEgqNe3AHWlHS6U6EQuJeFCokGlemUJCQsCE5xa/QrN0Rmz3O7ES+p/wzxbub2exkwMzMzP4PNQcRsQWcAZv5czp5BC4lPdSH84mFN8BelqT+doD9+mAusWiSp2UqrcbU1toAjoG1HEU9vADXkp6GDjEzMytO688OEBELwErmlq7eJP1+jIqIcURUUa4qIsbN7tSh8RQY/cGbm5URcNIcph7klrJPwBO+Gr/56RtZBJZmXdTTu6SPoSPMzMyKlLrXWgeOgOX8OZ1UwJ2k5/owdWV6BRxkSepvFzisD1KHxtU8LVNpNaa21jZwnlpciFfgQtL90CFmZmbF+QRuGNEsjoA1dwAAAABJRU5ErkJggg==" class="nav__bars">
 					<div class="nav_dropdown">
 						<div class="dropdown_item">
-							<img src="https://img.icons8.com/material-outlined/24/000000/gear.png" />
-							<a href="#">Settings</a>
+							<img src="https://img.icons8.com/material/96/000000/dashboard-layout.png"/>
+							<a href="../common/dashboard.htm">Dashboard</a>
 						</div>
 						<div class="dropdown_item">
-							<img src="https://img.icons8.com/ios-glyphs/30/000000/group.png" />
-							<a href="#">Manage Beneficiaries</a>
+							<img src="https://img.icons8.com/ios-glyphs/90/000000/back-sorting.png"/>
+							<a href="#">Fund Transfer</a>
 						</div>
 						<div class="dropdown_item">
 							<img src="https://img.icons8.com/ios-filled/50/000000/terms-and-conditions.png" />
-							<a href="#">Term & Conditions</a>
+							<a href="../common/agrement.html">Privacy Policies</a>
 						</div>
 						<div class="dropdown_item">
 							<img src="https://img.icons8.com/material/30/000000/call-female.png" />
-							<a href="contact_us.htm">Contact Us</a>
+							<a href="../common/contact_us.htm">Contact Us</a>
 						</div>
 						<div class="dropdown_item">
 							<img src="https://img.icons8.com/ios-glyphs/30/000000/logout-rounded-left.png" />
-							<a href="index.html">Logout</a>
+							<a class="logout" href="index.html">Logout</a>
 						</div>
 					</div>
 				</li>
@@ -48,8 +57,12 @@
 		</nav>
 		<div class="container">
 			<div class="containter-grid">
-				<div class="balance_t">
-					<h1>Current balance: <span id="balance__transfer">215,019.00</span> Rs</h1>
+				<div class="balance">
+					<h1 style="display: inline">
+						Current Balance:
+						<span id="balance__value" style="color: green">215,019.00</span>
+						Rs
+					</h1>
 				</div>
 				<p>As of 2021/08/02, 2.40PM</p>
 			</div>
