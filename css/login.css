@@ -33,7 +33,7 @@ body {
 
 /* Login Container classes */
 .login_container_body {
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   background-image: var(--gradient-primary);
@@ -223,6 +223,7 @@ button[type="submit"]:hover {
 .footer {
   padding: 3rem 6rem;
   background-color: #37383d;
+  height: 20vh;
 }
 
 .footer__nav {
