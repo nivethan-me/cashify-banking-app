@@ -298,7 +298,6 @@ input[type='submit']:hover {
 
 form>p {
 	font-size: 1.7rem;
-	margin-left: 5px;
 	font-family: inherit;
 	font-weight: 400;
 }
@@ -441,7 +440,7 @@ form>p {
 	}
 
 	.flex-ca {
-		margin:4rem 1rem;
+		margin:4rem 0rem;
 	}
 
 	.flex-ca .box_ {
@@ -456,7 +455,7 @@ form>p {
 	}
 
 	.flex-ca .box_ p {
-		font-size: 1.6rem;
+		font-size: 1.3rem;
 	}
 
 	.form_container {
@@ -477,7 +476,6 @@ form>p {
 
 	form>p {
 		font-size: 1.7rem;
-		margin-left: 2rem;
 	}
 
 	.radio_btns {
