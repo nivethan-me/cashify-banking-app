@@ -38,7 +38,8 @@ body {
 
 /* Background image about us */
 .background {
-  background: var(--gradient-primary-about), url("../img/aboutUs2.jpg");
+  background: var(--gradient-primary-about),
+    url("./../img/about-us/aboutUs2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin: auto;

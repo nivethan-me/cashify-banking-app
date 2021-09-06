@@ -35,7 +35,7 @@ body {
   max-width: 1000px;
   min-width: 350px;
   margin: auto;
-  margin-top: 2.5rem;
+  margin-top: 5rem;
   margin-bottom: 2.5rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;
@@ -49,32 +49,38 @@ body {
 }
 
 .section-privacy__header {
-  font-weight: 900;
-  margin-bottom: 15px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
 }
 
 .section-privacy__description {
-  font-size: 14px;
+  font-size: 0.9rem;
   text-align: justify;
-  margin-bottom: 15px;
+  margin-bottom: 1rem;
+}
+.section-privacy__description:last-child {
+  margin-bottom: 2rem;
 }
 
 .section-privacy__subheader {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.2rem;
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 0.6rem;
+  margin-top: 2rem;
+  font-family: "Pacifico", cursive;
 }
 
 .list-items {
-  margin-left: 30px;
+  margin-left: 1.9rem;
 }
 
 @media screen and (max-width: 480px) {
   .section-privacy {
     text-align: center;
-    padding: 10px;
-    margin: 0 25px;
+    padding: 0.6rem;
+    margin: 0 1.7rem;
     font-size: 1.5rem;
   }
 }
