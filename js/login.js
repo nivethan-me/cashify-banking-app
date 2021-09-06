@@ -21,7 +21,7 @@
 // }
 
 function registrationRedirect() {
-  window.location.href = "../signup/signup.html";
+  window.location.href = "signup.html";
 }
 
 function showPassword() {

@@ -84,7 +84,7 @@ function showPassword() {
 
 //Redirect to Sign In page
 function signInRedirect() {
-  window.location.href = "../login/login.html";
+  window.location.href = "login.html";
 }
 
 //Redicrect to Home
