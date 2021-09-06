@@ -1,60 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="icon" href="https://img.icons8.com/color/96/000000/sri-lanka.png" type="image/x-icon" />
-		<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet" />
-		<link rel="stylesheet" href="../css/login.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="https://img.icons8.com/color/96/000000/sri-lanka.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/login.css" />
 
-		<title>Cashify | Login</title>
-	</head>
-	<body class="login">
-		<div class="login_container_body">
-			<div class="login_container">
-				<div class="heading">Cashify</div>
-				<div class="slogan">The trust of the nation</div>
-				<div class="containter-grid">
-					<div class="form_container">
-						<form>
-							<input type="text" id="username" name="username" placeholder="Username" />
-							<input type="password" id="password" name="password" placeholder="Password" />
+    <title>Cashify | Login</title>
+  </head>
+  <body class="login">
+    <div class="login_container_body">
+      <div class="login_container">
+        <div class="heading">Cashify</div>
+        <div class="slogan">The trust of the nation</div>
+        <div class="containter-grid">
+          <div class="form_container">
+            <form>
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Username"
+              />
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Password"
+              />
 
-							<div class="alertDiv">
-								<p id="errorText"></p>
-							</div>
+              <div class="alertDiv">
+                <p id="errorText"></p>
+              </div>
 
-							<div class="showPassword" onclick="showPassword()">
-								<input type="checkbox" id="showPasswordCheckBox" />
-								<label for="rmemberMe" class="rememberMe">Show Password</label>
-							</div>
-							<button type="submit" class="login__btn submit">LOGIN</button>
+              <div class="showPassword" onclick="showPassword()">
+                <input type="checkbox" id="showPasswordCheckBox" />
+                <label for="rmemberMe" class="rememberMe">Show Password</label>
+              </div>
+              <button type="submit" class="login__btn submit">LOGIN</button>
 
-							<div class="registerMember">
-								<p onclick="registrationRedirect();">Not a member?, Register yourself</p>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-			<div class="backButton" onclick="backToHome()">Back to home</div>
-		</div>
-		<footer class="footer">
-			<ul class="footer__nav">
-				<li class="footer__item">
-					<a class="footer__link" href="./common/aboutus.html">About</a>
-				</li>
-				<li class="footer__item">
-					<a class="footer__link" href="./common/agrement.html">Privacy Policy</a>
-				</li>
-				<li class="footer__item">
-					<a class="footer__link" href="./common/contact_us.htm">Contact Us</a>
-				</li>
-			</ul>
-			<img src="../img/landing-page/logo.svg" alt="Logo" class="footer__logo" />
-		</footer>
-	</body>
-	<script src="../js/script.js" type="text/javascript"></script>
-	<script src="../js/login.js" type="text/javascript"></script>
+              <div class="registerMember">
+                <p onclick="registrationRedirect();">
+                  Not a member?, Register yourself
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="backButton" onclick="backToHome()">Back to home</div>
+    </div>
+    <footer class="footer">
+      <div class="imageContainer">
+        <img
+          src="../img/landing-page/logo.svg"
+          alt="Logo"
+          class="footer__logo"
+        />
+        <p class="footerBrand">Cashify</p>
+      </div>
+
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="./common/aboutus.html">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="./common/agrement.html"
+            >Privacy Policy</a
+          >
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="./common/contact_us.htm">Contact Us</a>
+        </li>
+      </ul>
+      <p>All Rights Reserved<span>&reg;</span> 2021</p>
+    </footer>
+  </body>
+  <script src="../js/script.js" type="text/javascript"></script>
+  <script src="../js/login.js" type="text/javascript"></script>
 </html>

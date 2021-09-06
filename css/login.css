@@ -220,8 +220,60 @@ button[type="submit"]:hover {
   cursor: pointer;
 }
 
-/* FOOTER */
 .footer {
+  padding: 3rem 6rem;
+  background-color: #37383d;
+}
+
+.footer__nav {
+  width: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  list-style: none;
+  text-align: right;
+}
+
+.footer__link {
+  font-size: 1.6rem;
+  color: #eee;
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  color: white;
+  font-weight: 400;
+}
+
+.footer__logo {
+  margin-left: 3px;
+  width: 40px;
+  text-align: center;
+}
+
+.footerBrand {
+  font-size: 1.3rem;
+  color: white;
+}
+
+.imageContainer {
+  display: inline-block;
+  width: 49%;
+  vertical-align: top;
+}
+
+.footer > p {
+  text-align: center;
+  margin-top: 1rem;
+  color: rgb(160, 160, 160);
+  font-size: 1.3rem;
+  font-family: "Poppins", sans-serif;
+}
+p > span {
+  font-size: 2rem;
+}
+
+/* FOOTER */
+/* .footer {
   padding: 10rem 3rem;
   background-color: #37383d;
 }
@@ -258,4 +310,4 @@ button[type="submit"]:hover {
 
 .footer__copyright .footer__link {
   font-size: 1.6rem;
-}
+} */
