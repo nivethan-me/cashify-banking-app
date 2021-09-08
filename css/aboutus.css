@@ -51,7 +51,8 @@ body {
   width: 50%;
   font-size: 1.5rem;
   font-weight: normal;
-  padding: 2rem 4rem;
+  padding: 2rem 2rem;
+  padding-top: 3rem;
   font-family: "Pacifico", cursive;
   font-style: italic;
 }
@@ -60,7 +61,7 @@ body {
   color: white;
   display: inline-block;
   font-size: 4rem;
-  padding: 0 4rem;
+  padding: 0 2rem;
   line-height: 1.2;
   padding-bottom: 3rem;
   font-weight: 900;
@@ -68,7 +69,6 @@ body {
 }
 
 /* mission and vision style classes */
-
 .tiles {
   margin: 2rem;
 }
@@ -79,16 +79,53 @@ body {
   background: var(--gradient-primary);
 }
 
-@media (min-width: 400px) {
+@media (min-width: 450px) {
   .tiles {
-    width: 45%;
-    margin: 0.5rem;
-    margin-top: 3rem;
-    margin-bottom: 0;
+    /* width: 49.5%; */
+    margin: auto;
     display: inline-block;
     vertical-align: top;
   }
+  .lastTile {
+    width: 99.5%;
+  }
 }
+
+@media (min-width: 600px) {
+  .tiles {
+    width: 49.5%;
+    display: inline-block;
+  }
+  .lastTile {
+    width: 100%;
+  }
+
+  .background h1 {
+    padding-bottom: 4rem;
+  }
+
+  .background p {
+    padding-top: 4rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .lastTile {
+    width: 33%;
+  }
+  .tiles {
+    width: 33%;
+  }
+
+  .background h1 {
+    padding-bottom: 5rem;
+  }
+
+  .background p {
+    padding-top: 5rem;
+  }
+}
+
 .tiles h1 {
   font-weight: 500;
   margin: 0 2rem;
