@@ -195,7 +195,7 @@ h1 {
 	font-size: 5.5rem;
 	line-height: 1.35;
 	text-transform: uppercase;
-  /* line-height: 1.5; */
+	/* line-height: 1.5; */
 }
 
 h4 {
@@ -847,6 +847,9 @@ label #cancel {
 		z-index: -1;
 		padding: 0;
 	}
+	.highlight2 {
+		letter-spacing: 0;
+	}
   .highlight2{
     letter-spacing: 0;
   }
@@ -897,7 +900,7 @@ label #cancel {
 	.header {
 		/* padding:8rem 3rem; */
 		/* padding-bottom: 18rem; */
-		/* height: 10vh; */
+		height: 90vh;
 	}
 	.header__img {
 		border-radius: 1em;
@@ -913,7 +916,7 @@ label #cancel {
 	}
 	.header__title > h1 {
 		font-size: 3.3rem;
-    line-height: 1.5;
+		line-height: 1.5;
 	}
 	.header__title > h4 {
 		font-size: 2.1rem;
